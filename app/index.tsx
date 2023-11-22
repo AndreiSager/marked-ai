@@ -26,7 +26,7 @@ export default function Home() {
           ),
           headerRight: () => (
             // @ts-ignore
-            <ScreenHeaderBtn iconUrl={icons.profile} dimension="100%" />
+            <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
           ),
           headerTitle: "",
         }}
