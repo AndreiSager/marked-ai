@@ -1,5 +1,7 @@
+const violet = "#312651";
+
 const COLORS = {
-  primary: "#312651",
+  primary: violet,
   secondary: "#444262",
   tertiary: "#FF7754",
 
