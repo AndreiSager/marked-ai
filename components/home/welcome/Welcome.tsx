@@ -20,6 +20,9 @@ const jobTypes = [
   "Fear",
   "Contempt",
   "Surprise",
+  "A+",
+  "A-",
+  "B+",
 ];
 
 export default function Welcome() {
