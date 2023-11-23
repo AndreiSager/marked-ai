@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 // import { RAPID_API_KEY } from "@env";
-import { Alert } from "react-native";
+// import { Alert } from "react-native";
 
 // const rapidApiKey = RAPID_API_KEY;
 
@@ -33,7 +33,7 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false);
     } catch (error) {
       setError(error);
-      Alert("There is an error");
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
@@ -45,7 +45,7 @@ const useFetch = (endpoint, query) => {
 
   const refetch = () => {
     setIsLoading(true);
-    fetchData;
+    fetchData();
   };
 
   return { data, isLoading, error, refetch };
