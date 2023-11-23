@@ -21,11 +21,9 @@ export default function Home() {
           headerShadowVisible: false,
           headerTitleAlign: "center",
           headerLeft: () => (
-            // @ts-ignore
             <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
           ),
           headerRight: () => (
-            // @ts-ignore
             <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" />
           ),
           headerTitle: "",

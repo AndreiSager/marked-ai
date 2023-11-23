@@ -3,15 +3,12 @@ import { View, Text } from "react-native";
 
 import styles from "./popularjobcard.style";
 
-interface PopularJobCardProps {
-  item: number;
-  job_id?: string;
-}
-
-export default function PopularJobCard({ item, job_id }: PopularJobCardProps) {
+const PopularJobCard = (item, job_id) => {
   return (
     <View>
       <Text>PopularJobCard</Text>
     </View>
   );
-}
+};
+
+export default PopularJobCard;
