@@ -12,18 +12,7 @@ import { useRouter } from "expo-router";
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
-const jobTypes = [
-  "Happy",
-  "Sad",
-  "Disgust",
-  "Angry",
-  "Fear",
-  "Contempt",
-  "Surprise",
-  "A+",
-  "A-",
-  "B+",
-];
+const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
 export default function Welcome() {
   const router = useRouter();

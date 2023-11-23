@@ -39,10 +39,8 @@ export default function Home() {
           <Welcome />
           <Popularjobs />
           <Nearbyjobs />
-          <Text>Scroll</Text>
         </View>
       </ScrollView>
-      <Text>Home</Text>
     </SafeAreaView>
   );
 }
