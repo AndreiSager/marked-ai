@@ -45,7 +45,16 @@ const JobDetails = () => {
           />
         );
       case "About":
+        return (
+          <JobAbout info={data[0].job_description ?? "No Data Provided"} />
+        );
       case "Responsibilities":
+        return (
+          <Specifics
+            title="Responsibilities"
+            points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
+          />
+        );
       default:
         break;
     }
@@ -91,8 +100,8 @@ const JobDetails = () => {
               <Company
                 companyLogo={data[0].employee_logo}
                 jobTitle={data[0].job_title}
-                companyName={data[0].employee_name}
-                jobCountry={data[0].job_country}
+                companyName={data[0].employer_name}
+                location={data[0].job_country}
               />
 
               <JobTabs
