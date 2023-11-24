@@ -1,17 +1,18 @@
-import React from "react";
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
 import styles from "./tabs.style";
 import { SIZES } from "../../../constants";
 
-const TabButton = ({ name, activeTab, onHandleSearchType }) => {
-  <TouchableOpacity
-    style={styles.btn(name, activeTab)}
-    onHandleSearchType={onHandleSearchType}
-  >
-    <Text style={styles.btnText(name, activeTab)}>{name}</Text>
-  </TouchableOpacity>;
-};
+function TabButton({ name, activeTab, onHandleSearchType }) {
+  return (
+    <TouchableOpacity
+      style={styles.btn(name, activeTab)}
+      onPress={onHandleSearchType}
+    >
+      <Text style={styles.btnText(name, activeTab)}>{name}</Text>
+    </TouchableOpacity>
+  );
+}
 
 const Tabs = ({ tabs, activeTab, setActiveTab }) => {
   return (
