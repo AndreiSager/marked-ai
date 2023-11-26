@@ -17,6 +17,7 @@ const jobTypes = ["Full-time", "Part-time", "Contractor"];
 export default function Welcome({ searchTerm, setSearchTerm, handleClick }) {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Happy");
+
   return (
     <View>
       <View style={styles.container}>
