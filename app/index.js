@@ -40,7 +40,6 @@ export default function Home() {
           }}
         >
           <CardStacks />
-          <CardStack />
           {/* <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}

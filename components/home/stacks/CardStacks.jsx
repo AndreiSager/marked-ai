@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
 import styles from "./cardstacks.style";
 import CardStacksCard from "../../common/cards/stacks/CardStacksCard";
+import { useRouter } from "expo-router";
 
 const CardStacks = () => {
   const stacksExample = [
@@ -60,6 +61,12 @@ const CardStacks = () => {
     },
   ];
 
+  const router = useRouter();
+
+  const handleCardStackPress = (item) => {
+    router.push(`/card-stack-details/${item.id}`);
+  };
+
   return (
     <View style={styles.container}>
       <View>
@@ -71,7 +78,12 @@ const CardStacks = () => {
         data={stacksExample}
         numColumns={2}
         renderItem={({ item }) => (
-          <CardStacksCard id={item.id} title={item.title} />
+          <CardStacksCard
+            item={item}
+            id={item.id}
+            title={item.title}
+            handleCardStackPress={handleCardStackPress}
+          />
         )}
         keyExtractor={(item) => item.id}
       />
