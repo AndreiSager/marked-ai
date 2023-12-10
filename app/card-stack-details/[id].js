@@ -29,16 +29,7 @@ const CardStackDetails = () => {
 
       <>
         <ScrollView>
-          <View>
-            <View style={{ flex: 1, flexDirection: "row" }}>
-              <Text>Thumbnail</Text>
-              <View>
-                <Text>Title</Text>
-                <Text>Description</Text>
-              </View>
-            </View>
-            <Text>Tags</Text>
-          </View>
+          <CardStackDetails />
 
           <CardStack />
         </ScrollView>
