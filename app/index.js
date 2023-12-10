@@ -39,7 +39,7 @@ export default function Home() {
           }}
         >
           <Stacks />
-          <Welcome
+          {/* <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             handleClick={() => {
@@ -49,7 +49,7 @@ export default function Home() {
             }}
           />
           <Popularjobs />
-          <Nearbyjobs />
+          <Nearbyjobs /> */}
         </View>
       </ScrollView>
     </SafeAreaView>

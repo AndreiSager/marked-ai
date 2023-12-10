@@ -36,6 +36,27 @@ const stacksExample = [
     id: "8",
     title: "Leetcode",
   },
+
+  {
+    id: "9",
+    title: "Science",
+  },
+  {
+    id: "10",
+    title: "Math",
+  },
+  {
+    id: "11",
+    title: "Algorithms",
+  },
+  {
+    id: "12",
+    title: "Leetcode",
+  },
+  {
+    id: "13",
+    title: "Leetcode Of The Century Some More Depression",
+  },
 ];
 
 const Stacks = () => {
