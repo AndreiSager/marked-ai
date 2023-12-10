@@ -1,9 +1,11 @@
 import { View, Text } from "react-native";
 
-const StackCard = () => {
+import styles from "./stackcard.style";
+
+const StackCard = ({ id, title }) => {
   return (
-    <View>
-      <Text>StackCard</Text>
+    <View style={styles.container}>
+      <Text>{title}</Text>
     </View>
   );
 };
