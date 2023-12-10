@@ -65,7 +65,7 @@ const CardStack = () => {
     <View style={styles.container}>
       <View>
         <TouchableOpacity>
-          <Text>Sort</Text>
+          <Text style={{ width: "full", textAlign: "right" }}>Sort</Text>
         </TouchableOpacity>
       </View>
 
