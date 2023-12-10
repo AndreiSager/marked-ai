@@ -9,6 +9,7 @@ import {
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
+import Stacks from "../components/home/stacks/Stacks";
 
 export default function Home() {
   const router = useRouter();
@@ -37,6 +38,7 @@ export default function Home() {
             padding: SIZES.medium,
           }}
         >
+          <Stacks />
           <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
