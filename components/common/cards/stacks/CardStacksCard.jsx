@@ -1,8 +1,8 @@
 import { View, Text, TouchableOpacity } from "react-native";
 
-import styles from "./stackscard.style";
+import styles from "./cardstackscard.style";
 
-const StackCard = ({ id, title }) => {
+const CardStacksCard = ({ id, title }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.stackThumbnail}></TouchableOpacity>
@@ -13,4 +13,4 @@ const StackCard = ({ id, title }) => {
   );
 };
 
-export default StackCard;
+export default CardStacksCard;

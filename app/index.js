@@ -9,7 +9,8 @@ import {
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
-import Stacks from "../components/home/stacks/Stacks";
+import CardStacks from "../components/home/stacks/CardStacks";
+import CardStack from "../components/stackdetails/stack/CardStack";
 
 export default function Home() {
   const router = useRouter();
@@ -38,7 +39,8 @@ export default function Home() {
             padding: SIZES.medium,
           }}
         >
-          <Stacks />
+          <CardStacks />
+          <CardStack />
           {/* <Welcome
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
