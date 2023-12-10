@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, ScrollView } from "react-native";
-import { Stack } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 import CardStack from "../../components/stackdetails/stack/CardStack";
 
 import { ScreenHeaderBtn } from "../../components";
@@ -7,6 +7,8 @@ import { ScreenHeaderBtn } from "../../components";
 import { COLORS, SIZES, icons } from "../../constants";
 
 const CardStackDetails = () => {
+  const router = useRouter();
+
   return (
     <SafeAreaView>
       <Stack.Screen
@@ -15,7 +17,11 @@ const CardStackDetails = () => {
           headerShadowVisible: false,
           headerTitleAlign: "center",
           headerLeft: () => (
-            <ScreenHeaderBtn iconUrl={icons.chevronLeft} dimension="60%" />
+            <ScreenHeaderBtn
+              iconUrl={icons.chevronLeft}
+              dimension="60%"
+              handlePress={() => router.back()}
+            />
           ),
           headerTitle: "",
         }}
@@ -24,9 +30,11 @@ const CardStackDetails = () => {
         <Text>Hello</Text>
       </View>
 
-      <ScrollView>
-        <CardStack />
-      </ScrollView>
+      <>
+        <ScrollView>
+          <CardStack />
+        </ScrollView>
+      </>
     </SafeAreaView>
   );
 };
