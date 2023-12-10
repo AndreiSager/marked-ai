@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
 import styles from "./cardstack.style";
 import CardStackCard from "../../common/cards/stack/CardStackCard";
+import { ScrollView } from "react-native-gesture-handler";
 
 const CardStack = () => {
   const stacksExample = [
@@ -67,6 +68,7 @@ const CardStack = () => {
           <Text>Sort</Text>
         </TouchableOpacity>
       </View>
+
       <FlatList
         data={stacksExample}
         numColumns={3}
