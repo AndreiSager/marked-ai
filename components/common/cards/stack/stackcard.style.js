@@ -1,14 +1,22 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS } from "../../../../constants";
+import { COLORS, SIZES } from "../../../../constants";
 
 const styles = StyleSheet.create({
   container: {
-    width: "27.5%",
-    aspectRatio: 1,
+    width: "28%",
+    margin: SIZES.xSmall,
+    rowGap: 5,
+  },
+  stackThumbnail: {
+    width: "100%",
+    aspectRatio: 0.8,
     backgroundColor: COLORS.tertiary,
-    padding: 10,
-    margin: 10,
+    borderRadius: SIZES.medium,
+  },
+  stackTitle: {
+    width: "100%",
+    textAlign: "center",
   },
 });
 

@@ -1,11 +1,12 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 
 import styles from "./stackcard.style";
 
 const StackCard = ({ id, title }) => {
   return (
     <View style={styles.container}>
-      <Text>{title}</Text>
+      <TouchableOpacity style={styles.stackThumbnail}></TouchableOpacity>
+      <Text style={styles.stackTitle}>{title}</Text>
     </View>
   );
 };

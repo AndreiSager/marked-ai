@@ -20,14 +20,32 @@ const stacksExample = [
     id: "4",
     title: "Leetcode",
   },
+  {
+    id: "5",
+    title: "Science",
+  },
+  {
+    id: "6",
+    title: "Math",
+  },
+  {
+    id: "7",
+    title: "Algorithms",
+  },
+  {
+    id: "8",
+    title: "Leetcode",
+  },
 ];
 
 const Stacks = () => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
-        <Text>Stacks of Cards</Text>
-      </TouchableOpacity>
+      <View>
+        <TouchableOpacity>
+          <Text>Sort</Text>
+        </TouchableOpacity>
+      </View>
       <FlatList
         contentContainerStyle={{}}
         data={stacksExample}
