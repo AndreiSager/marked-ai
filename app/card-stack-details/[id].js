@@ -10,7 +10,7 @@ const CardStackDetails = () => {
   const router = useRouter();
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
