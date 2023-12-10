@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
 import styles from "./stacks.style";
-import StackCard from "../../common/cards/stack/StackCard";
+import StackCard from "../../common/cards/stacks/StacksCard";
 
 const stacksExample = [
   {
@@ -70,7 +70,7 @@ const Stacks = () => {
       <FlatList
         contentContainerStyle={{}}
         data={stacksExample}
-        numColumns={3}
+        numColumns={2}
         renderItem={({ item }) => <StackCard id={item.id} title={item.title} />}
         keyExtractor={(item) => item.id}
       />
