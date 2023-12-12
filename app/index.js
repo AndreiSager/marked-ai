@@ -32,6 +32,7 @@ export default function Home() {
           headerTitle: "",
         }}
       />
+
       <ScrollView showsVerticalScrollIndicator={false}>
         <View
           style={{
