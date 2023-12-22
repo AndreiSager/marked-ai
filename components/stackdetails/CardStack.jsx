@@ -1,7 +1,8 @@
 import { View, Text, TouchableOpacity, FlatList } from "react-native";
 
-import styles from "./cardstack.style";
-import CardStackCard from "../../common/cards/stack/CardStackCard";
+import { StyleSheet } from "react-native";
+
+import CardStackCard from "../common/cards/stack/CardStackCard";
 
 const CardStack = () => {
   const stacksExample = [
@@ -81,3 +82,13 @@ const CardStack = () => {
 };
 
 export default CardStack;
+
+const styles = StyleSheet.create({
+  container: {
+    width: "100%",
+  },
+  containerStacks: {
+    flexBasis: "flex",
+    justifyContent: "space-between",
+  },
+});
